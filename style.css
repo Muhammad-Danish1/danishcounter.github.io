@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.7rem;
+}
+.container span {
+    font-size: 4rem;
+    font-weight: 700 ;
+}
+
+/* ********************* btn container ********************* */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.btn {
+    font-size: 1rem;
+    font-weight: 500;
+    border-color: #090909;
+    border-radius: 9px;
+    padding: .4rem .9rem;
+    cursor: pointer;
+    background: transparent;
+    text-transform: uppercase;
+}
+
+/* *********************** media quires ***************************** */
+@media (max-width: 340px) {
+    .btn-container{
+        flex-direction: column;
+    }
+}
